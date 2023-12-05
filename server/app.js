@@ -13,7 +13,7 @@ app.set('views', path.join(__dirname, 'views'))
 app.use(express.static(__dirname + '/public'));
 
 app.use('/', (req,res)=>{
-    res.render('index')
+    res.render('admin/dashboard')
 })
 
 app.use('/api', routes)
